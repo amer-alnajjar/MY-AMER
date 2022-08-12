@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+
+.container{
+    position: relative;
+    padding: 0 8%;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.705),transparent),url(img/00100sPORTRAIT_00100_BURST٢٠٢٠٠٧٠٣٠٠٠٣٠٥٠٩٨_COVER\ \(1\).jpg);
+    background-size: cover;
+    background-position:center ;
+
+    
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+nav .logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+nav .cart{
+    width: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 30px;
+   
+}
+
+nav ul li a{
+    position: relative;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 2px;
+    font-size: 12px;
+
+}
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width:0;
+    height: 3px;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    transition: width 0.3s;
+
+}
+
+nav ul li a:hover::after{
+width: 100%;
+} 
+
+.textbox{
+    color: #fff;
+    position: absolute;
+    bottom: 8%;
+}
+
+.textbox p{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.textbox h1{
+    font-size: 120px;
+    line-height: 160px;
+   margin-left: -10px;
+   color: transparent;
+   -webkit-text-stroke: 1px #fff;
+  background-image: url(img/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+   
+}
+
+@keyframes back{
+    100%{
+        background-position: 2000px 0;
+    }
+}
+
+
+
+
+
+
+.textbox h3{
+    font-size: 40px;
+    font-weight: 500;
+}
+.textbox .ROW{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.textbox  a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px ;
+    margin-right: 20px;
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+}
+.textbox a span{
+    font-size: 30px;
+    line-height: 15px;
+    margin-left: 5px;
+}
+.textbox .ROW span{
+    font-size: 15px;
+}
+
+.social{
+    position: absolute;
+    right: 5%;
+  bottom: 8%;
+   
+}
+.social img{
+    width: 25px;
+    display: block;
+    margin: 25px 5px;
+}
